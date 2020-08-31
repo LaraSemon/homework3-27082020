@@ -20,7 +20,7 @@ public class Task_1 {
             int z = random.nextInt(max);
             boolean guess = false;
             for (int i = 0; i < 3; i++) {
-                System.out.println("попробуйте отгадать число от 0 до 9 и введите значение" + (max - 1));
+                System.out.println("попробуйте отгадать число от 0 до 9 и введите значение до " + (max - 1));
 
                 int input = sc.nextInt();
                 if (input < z) {
@@ -36,7 +36,8 @@ public class Task_1 {
 
             }
             if (guess) {
-                System.out.println("правильно! z = " + z);
+
+            System.out.println("правильно! z = " + z);
 
             } else {
                 System.out.println("вы не угадали! z = " + z);
